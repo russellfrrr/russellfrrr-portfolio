@@ -1,2 +1,36 @@
 @import "tailwindcss";
 
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  right: 0;
+  left: auto;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  right: auto;
+  left: 0;
+}
+
+.glow-text {
+  transition: text-shadow 0.3s ease;
+}
+
+.glow-text:hover {
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+               0 0 20px rgba(255, 255, 255, 0.6);
+}
+

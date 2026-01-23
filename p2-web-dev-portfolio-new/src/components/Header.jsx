@@ -6,17 +6,17 @@ function Header() {
           {/* Logo + Name */}
           <div className="flex items-center gap-2">
             <img src="/photos/logo.png" alt="Russell Ferrero" className="w-14 h-14 drop-shadow-xl hover:rotate-45 transition-transform" />
-            <h1 className="text-2xl font-bold text-white drop-shadow-lg">
+            <h1 className="text-2xl font-bold text-white drop-shadow-lg glow-text cursor-pointer">
               russellfrrr
             </h1>
           </div>
 
           {/* Nav Links */}
           <ul className="flex gap-6 text-white drop-shadow-lg">
-            <li><a href="#home" className="hover:opacity-70 transition">Home</a></li>
-            <li><a href="#projects" className="hover:opacity-70 transition">Projects</a></li>
-            <li><a href="#skills" className="hover:opacity-70 transition">Skills</a></li>
-            <li><a href="#contact" className="hover:opacity-70 transition">Contact</a></li>
+            <li><a href="#home" className="nav-link">home</a></li>
+            <li><a href="#projects" className="nav-link">projects</a></li>
+            <li><a href="#skills" className="nav-link">skills</a></li>
+            <li><a href="#contact" className="nav-link">contact</a></li>
           </ul>
         </div>
       </nav>
