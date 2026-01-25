@@ -1,10 +1,12 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
 
 .nav-link {
   position: relative;
   display: inline-block;
-  font-weight: bold;
 }
 
 .nav-link::after {

@@ -1,51 +1,65 @@
+import { FiDownload } from 'react-icons/fi';
+
 function About() {
+  const handleVideoContextMenu = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <section id="about" className="bg-black py-32 transition-transform duration-500">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
 
           <div>
-            <h2 className="text-4xl font-bold text-white mb-6">
+            <h2 className="text-5xl font-bold text-white mb-8 relative inline-block" style={{fontFamily: 'Poppins'}}>
               About Me
+              <div className="absolute bottom-0 left-0 h-1 bg-linear-to-r from-amber-400 to-amber-600" style={{width: '60%'}}></div>
             </h2>
 
-            <p className="text-lg text-gray-300 mb-4 text-justify leading-relaxed">
-              I'm Russell, a full-stack web developer currently focused on 
-              mastering the <strong>MERN stack</strong>. I believe technology 
-              isn't just about code - it's about creating solutions that can 
-              make life better for people. My goal is to grow into a developer
-              who build applications that are not only functional and modern,
-              but also meaningful and impactful to society.
+            <p className="text-lg text-gray-300 mb-8 text-justify leading-8" style={{fontFamily: 'Inter'}}>
+              I'm Russell, a <span className="text-amber-400 font-semibold">full-stack web developer</span> currently focused on 
+              mastering the <span className="text-amber-400 font-semibold">MERN stack</span>. I believe technology 
+              isn't just about writing code, it's about building solutions that
+              make life better for people.
             </p>
 
-            <p className="text-lg text-gray-300 text-justify leading-relaxed">
-              When I'm not coding, you'll probably find me grinding on <strong>games</strong>
-              (because debugging is easier than climbing ranked, trust me). I'm also a fan of
-              good <strong>whiskey</strong> and <strong>vodka</strong>, and a huge <strong>One Piece</strong>
-              follower - still waiting for Luffy to finally find that treasure, just like I'm 
-              chasing mine. 
+            <p className="text-lg text-gray-300 mb-8 text-justify leading-8" style={{fontFamily: 'Inter'}}>
+              <span className="text-amber-400 font-semibold">My goal</span> is to grow into a developer who creates applications that are
+              not only functional and modern, but <span className="text-amber-400 font-semibold">meaningful</span> and <span className="text-amber-400 font-semibold">impactful</span> to society.
             </p>
+
+            <p className="text-lg text-gray-300 mb-8 text-justify leading-8" style={{fontFamily: 'Inter'}}>
+              When I'm not coding, you'll probably find me grinding on <span className="text-amber-400 font-semibold">games</span> (because 
+              debugging is easier than climbing ranked, trust me). I'm also a fan of
+              good <span className="text-amber-400 font-semibold">whiskey</span> and <span className="text-amber-400 font-semibold">vodka</span>, and a huge <span className="text-amber-400 font-semibold">One Piece</span> follower - still waiting for Luffy to finally find that treasure, just like I'm 
+              chasing mine.
+            </p>
+
+            <a 
+              href="files/RussellFerrero_2026_Resume.pdf" 
+              download 
+              className="inline-flex items-center gap-2 text-gray-400 hover:text-amber-400 transition cursor-pointer font-medium"
+              title="Download Resume"
+              style={{fontFamily: 'Poppins'}}
+            >
+              <FiDownload size={20} />
+              Resume
+            </a>
           </div>
 
           <div>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3 hover:translate-x-2 transition group cursor-pointer">
-                <span className="text-white font-semibold group-hover:text-blue-400 transition">→</span>
-                <span className="text-gray-200">Full Stack Developer</span>
-              </li>
-              <li className="flex items-start gap-3 hover:translate-x-2 transition group cursor-pointer">
-                <span className="text-white font-semibold group-hover:text-blue-400 transition">→</span>
-                <span className="text-gray-200">MERN Stack Specialist</span>
-              </li>
-              <li className="flex items-start gap-3 hover:translate-x-2 transition group cursor-pointer">
-                <span className="text-white font-semibold group-hover:text-blue-400 transition">→</span>
-                <span className="text-gray-200">Backend-focused</span>
-              </li>
-              <li className="flex items-start gap-3 hover:translate-x-2 transition group cursor-pointer">
-                <span className="text-white font-semibold group-hover:text-blue-400 transition">→</span>
-                <span className="text-gray-200">Problem Solver</span>
-              </li>
-            </ul>
+            <video 
+              autoPlay 
+              loop 
+              muted 
+              playsInline
+              disablePictureInPicture
+              onContextMenu={handleVideoContextMenu}
+              className="w-full h-96 object-cover rounded-lg"
+              controlsList="nofullscreen nodownload"
+            >
+              <source src="/videos/about-video.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
       </div>
