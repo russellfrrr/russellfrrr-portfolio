@@ -29,7 +29,7 @@ function Hero() {
           <h2
             className="text-6xl md:text-7xl font-bold text-white mb-12"
             style={{
-              fontFamily: 'Poppins',
+              fontFamily: '"Playfair Display", serif',
               letterSpacing: '0.03em',
               fontWeight: 700,
             }}

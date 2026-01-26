@@ -19,7 +19,7 @@ function Header() {
           {/* Logo + Name */}
           <div className="flex items-center gap-2">
             <img src="/photos/logo.png" alt="Russell Ferrero" className="w-14 h-14 drop-shadow-xl hover:rotate-45 transition-transform" />
-            <h1 className="text-2xl font-bold text-white drop-shadow-lg glow-text cursor-default" style={{fontFamily: 'Poppins', letterSpacing: '0.01em'}}>
+            <h1 className="text-2xl font-bold text-white drop-shadow-lg glow-text cursor-default" style={{fontFamily: '"Times New Roman", Times, serif', letterSpacing: '0.01em'}}>
               russellfrrr
             </h1>
           </div>
