@@ -21,7 +21,7 @@ function Projects() {
       tech: ["React", "Node.js", "MongoDB", "Express", "TailwindCSS"],
       category: "Full-Stack",
       live: "#",
-      github: "#"
+      github: "https://github.com/russellfrrr/suitlink-job-portal"
     },
     {
       id: 3,
