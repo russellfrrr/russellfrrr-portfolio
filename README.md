@@ -1,93 +1,184 @@
-# Projects
+# 💼 Russell Ferrero - Web Developer Portfolio
 
-Repository for compiling personal projects
+A modern, responsive portfolio website showcasing my journey as a full-stack web developer. Built with React and styled with Tailwind CSS, this portfolio features smooth animations, interactive elements, and a clean, professional design.
 
-## Getting started
+---
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+## 🌟 Features
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+- **Responsive Design** - Fully optimized for desktop, tablet, and mobile devices
+- **Modern UI/UX** - Clean, minimalist design with smooth transitions and animations
+- **Interactive Hero Section** - Dynamic typewriter effect showcasing my skills
+- **Project Showcase** - Detailed project cards with live demos and GitHub links
+- **Skills Display** - Visual representation of technical skills and tools
+- **Contact Form** - Functional contact form powered by EmailJS
+- **Fast Performance** - Optimized with Vite for lightning-fast load times
+- **Smooth Navigation** - Single-page application with smooth scrolling
 
-## Add your files
+---
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+## 🛠️ Tech Stack
+
+### Core Technologies
+- **React 19** - JavaScript library for building user interfaces
+- **Vite** - Next-generation frontend build tool
+- **Tailwind CSS 4** - Utility-first CSS framework
+
+### Libraries & Tools
+- **React Icons** - Icon library for React
+- **Typewriter Effect** - Animated typing effect
+- **EmailJS** - Email service for contact form
+- **ESLint** - Code linting and formatting
+
+---
+
+## 📁 Project Structure
 
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/uplift-code-camp/students/batch-27/russell-gonzales-ferrero/projects.git
-git branch -M main
-git push -uf origin main
+p2-web-dev-portfolio-new/
+├── public/                  # Static assets
+│   └── photos/             # Project images and logos
+├── src/
+│   ├── components/
+│   │   ├── Header.jsx      # Navigation bar
+│   │   ├── Hero.jsx        # Landing section
+│   │   ├── About.jsx       # About me section
+│   │   ├── Skills.jsx      # Skills showcase
+│   │   ├── Projects.jsx    # Project portfolio
+│   │   ├── Contact.jsx     # Contact form
+│   │   └── Footer.jsx      # Footer section
+│   ├── config/             # Configuration files
+│   ├── App.jsx             # Main app component
+│   ├── main.jsx            # Entry point
+│   ├── App.css             # Component styles
+│   └── index.css           # Global styles
+├── index.html
+├── package.json
+└── vite.config.js
 ```
 
-## Integrate with your tools
+---
 
-- [ ] [Set up project integrations](https://gitlab.com/uplift-code-camp/students/batch-27/russell-gonzales-ferrero/projects/-/settings/integrations)
+## 🎨 Sections
 
-## Collaborate with your team
+### Hero
+Dynamic introduction with typewriter effect showcasing different roles and skills.
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+### About
+Brief introduction about me, my background, and what drives my passion for web development.
 
-## Test and Deploy
+### Skills
+Visual representation of my technical skills including:
+- Frontend: HTML5, CSS3, JavaScript, React
+- Backend: Node.js, Express, MongoDB
+- Tools: Git, VS Code, Postman, Figma
 
-Use the built-in continuous integration in GitLab.
+### Projects
+Showcase of featured projects including:
+- **SpendWise** - Personal finance management app
+- **SuitLink** - Job portal application
+- **Amihan** - Air quality monitoring app
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+### Contact
+Functional contact form allowing visitors to reach out directly through the website.
 
-***
+---
 
-# Editing this README
+## 📧 Contact Form Setup
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+The contact form uses EmailJS. To set it up:
 
-## Suggestions for a good README
+1. Sign up at [EmailJS](https://www.emailjs.com/)
+2. Create an email service (Gmail, Outlook, etc.)
+3. Create an email template
+4. Add your EmailJS credentials to the Contact component
+5. Test the form to ensure emails are being sent
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+---
 
-## Name
-Choose a self-explaining name for your project.
+## 🎯 Key Features Breakdown
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+### Responsive Navigation
+- Fixed header with smooth scroll navigation
+- Mobile-friendly hamburger menu
+- Active section highlighting
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+### Interactive Project Cards
+- Hover effects with smooth transitions
+- Technology tags for each project
+- Links to live demos and source code
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+### Modern Animations
+- Fade-in animations on scroll
+- Smooth hover transitions
+- Dynamic typewriter effect
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+---
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## 🌐 Deployment
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+This portfolio can be deployed on various platforms:
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+### Netlify
+```bash
+npm run build
+# Drag and drop the dist folder to Netlify
+```
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+### Vercel
+```bash
+npm run build
+# Connect your Git repository to Vercel
+```
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+### GitHub Pages
+```bash
+npm run build
+# Deploy the dist folder to gh-pages branch
+```
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+---
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+## 📱 Browser Support
 
-## License
-For open source projects, say how it is licensed.
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+---
+
+## 🤝 Contributing
+
+Feel free to fork this project and customize it for your own portfolio! If you find any bugs or have suggestions, please open an issue.
+
+---
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+## 👨‍💻 About Me
+
+**Russell Ferrero**  
+Full-Stack Web Developer  
+Specializing in Backend Development & System Design
+
+- 📧 Email: your.email@example.com
+- 💼 LinkedIn: [linkedin.com/in/russellfrrr](https://linkedin.com/in/russellfrrr)
+- 🐙 GitHub: [github.com/russellfrrr](https://github.com/russellfrrr)
+
+---
+
+## 🙏 Acknowledgments
+
+- Inspired by modern web design trends
+- Icons from React Icons
+- Fonts from Google Fonts
+- Built with passion and lots of coffee ☕
+
+---
+
+**Made with ❤️ by Russell Ferrero**
