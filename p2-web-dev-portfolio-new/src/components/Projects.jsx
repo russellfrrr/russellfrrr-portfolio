@@ -20,7 +20,7 @@ function Projects() {
       description: "A job portal web application designed to bring clarity and structure to the hiring process",
       tech: ["React", "Node.js", "MongoDB", "Express", "TailwindCSS"],
       category: "Full-Stack",
-      live: "#",
+      live: "https://suitlink.vercel.app/",
       github: "https://github.com/russellfrrr/suitlink-job-portal"
     },
     {
