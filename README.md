@@ -166,7 +166,7 @@ This project is open source and available under the MIT License.
 Full-Stack Web Developer  
 Specializing in Backend Development & System Design
 
-- 📧 Email: your.email@example.com
+- 📧 Email: russellferrero00@gmail.com
 - 💼 LinkedIn: [linkedin.com/in/russellfrrr](https://linkedin.com/in/russellfrrr)
 - 🐙 GitHub: [github.com/russellfrrr](https://github.com/russellfrrr)
 
@@ -180,5 +180,3 @@ Specializing in Backend Development & System Design
 - Built with passion and lots of coffee ☕
 
 ---
-
-**Made with ❤️ by Russell Ferrero**
