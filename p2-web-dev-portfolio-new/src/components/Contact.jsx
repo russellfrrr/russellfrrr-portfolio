@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { sendEmail } from '../config/emailjs.js';
+import { HiOutlineMail } from 'react-icons/hi';
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -99,6 +100,17 @@ function Contact() {
             {loading ? 'Sending...' : 'Send Message'}
           </button>
         </form>
+
+        {/* Email Link */}
+        <div className="mt-8 text-center">
+          <a 
+            href="mailto:russellferrero00@gmail.com" 
+            className="inline-flex items-center gap-2 text-gray-400 hover:text-amber-400 transition duration-300 cursor-pointer"
+          >
+            <HiOutlineMail size={20} />
+            <span>russellferrero00@gmail.com</span>
+          </a>
+        </div>
       </div>
     </section>
   );
