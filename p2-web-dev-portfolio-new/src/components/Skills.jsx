@@ -1,17 +1,24 @@
 import { FaReact, FaJsSquare, FaNode, FaGitAlt, FaBootstrap } from 'react-icons/fa';
-import { SiTailwindcss, SiCss3, SiExpress, SiMongodb, SiMaterialdesign } from 'react-icons/si';
+import { SiTailwindcss, SiCss3, SiExpress, SiMongodb, SiMaterialdesign, SiTypescript, SiPostgresql } from 'react-icons/si';
 
 function Skills() {
   const skills = [
-    { icon: <FaReact className="text-4xl text-blue-400" />, label: "React", link: "https://react.dev" },
-    { icon: <SiTailwindcss className="text-4xl text-cyan-400" />, label: "Tailwind CSS", link: "https://tailwindcss.com" },
+    // Languages
     { icon: <FaJsSquare className="text-4xl text-yellow-400" />, label: "JavaScript", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
+    { icon: <SiTypescript className="text-4xl text-blue-500" />, label: "TypeScript", link: "https://www.typescriptlang.org" },
+    // Frontend
+    { icon: <FaReact className="text-4xl text-blue-400" />, label: "React", link: "https://react.dev" },
+    { icon: <SiCss3 className="text-4xl text-blue-500" />, label: "CSS3", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+    { icon: <SiTailwindcss className="text-4xl text-cyan-400" />, label: "Tailwind CSS", link: "https://tailwindcss.com" },
     { icon: <FaBootstrap className="text-4xl text-purple-500" />, label: "Bootstrap", link: "https://getbootstrap.com" },
     { icon: <SiMaterialdesign className="text-4xl text-blue-500" />, label: "Material UI", link: "https://mui.com" },
-    { icon: <SiCss3 className="text-4xl text-blue-500" />, label: "CSS3", link: "https://developer.mozilla.org/en-US/docs/Web/CSS" },
+    // Backend
     { icon: <FaNode className="text-4xl text-green-400" />, label: "Node.js", link: "https://nodejs.org/en/docs/" },
     { icon: <SiExpress className="text-4xl text-gray-400" />, label: "Express", link: "https://expressjs.com" },
+    // Databases
     { icon: <SiMongodb className="text-4xl text-green-500" />, label: "MongoDB", link: "https://docs.mongodb.com" },
+    { icon: <SiPostgresql className="text-4xl text-blue-400" />, label: "PostgreSQL", link: "https://www.postgresql.org" },
+    // Tools
     { icon: <FaGitAlt className="text-4xl text-orange-400" />, label: "Git", link: "https://git-scm.com/doc" },
   ];
 
