@@ -171,12 +171,3 @@ Specializing in Backend Development & System Design
 - 🐙 GitHub: [github.com/russellfrrr](https://github.com/russellfrrr)
 
 ---
-
-## 🙏 Acknowledgments
-
-- Inspired by modern web design trends
-- Icons from React Icons
-- Fonts from Google Fonts
-- Built with passion and lots of coffee ☕
-
----
